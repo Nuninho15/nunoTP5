@@ -1,0 +1,100 @@
+/* style.css */
+
+/* Reset de marges et padding par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Style pour l'en-tête */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Style pour la liste de titres */
+ul.liste-titres {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style pour chaque élément de la liste */
+ul.liste-titres li {
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Style pour le lien de chaque élément de la liste */
+a.titre {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    padding: 20px;
+}
+
+/* Style pour le titre principal */
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+/* Style pour le sous-titre */
+.p.sous-titre {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Effet au survol sur chaque élément de la liste */
+ul.liste-titres li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+ul.liste-titres li a:hover h2 {
+    color: #007bff;
+}
+
+ul.liste-titres li a:hover .sous-titre {
+    color: #007bff;
+}
+
+/* Responsive: Ajustement pour les petits écrans */
+@media screen and (max-width: 600px) {
+    ul.liste-titres li {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
